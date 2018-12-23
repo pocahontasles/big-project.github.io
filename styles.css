@@ -1,4 +1,103 @@
-*{
-  box-sizing: border-box;
+@font-face {
+  src: url("fonts/trebuc.ttf");
+  font-family: 'Trebuchet';
+}
+body{
+  min-height: 100vh;
+  padding-top: 220px 0 0 0;
   margin: 0;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 12px;
+  color: #848484;
+  background-color: #ffffff;
+}
+body* {
+  box-sizing: border-box;
+}
+h1{
+  font-size: 30px;
+}
+h2{
+font-size: 22px;
+}
+
+a{
+  color: #111828;
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: underline;
+}
+ul{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+img{
+  width: auto;
+  max-width: 100%;
+}
+.holder::after{
+content: '';
+display: block;
+clear: both;
+}
+
+header{
+  height: 120px;
+  border-bottom: 1px solid #e5e5e5;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding-top: 30px;
+  background-color: #ffffff;
+}
+.wrapper{
+  width: 1024px;
+  margin: 0  auto;
+}
+header a.logo{
+  font-family: 'Trebuchet', sans-serif;
+  font-size: 51px;
+  color: #111828;
+}
+header a.logo:hover{
+   text-decoration: none;
+ }
+header a.logo span{
+  color: rgba(11, 12, 22, 0.52);
+}
+header a.logo span::after{
+  content: '';
+  display: inline-block;
+  width: 29px;
+  height: 29px;
+  background-color: #31ff1e;
+  border-radius: 50px;
+  position: relative;
+  right: 4px;
+  top: 2px;
+}
+header nav{
+  float: right;
+  padding-top: 15px;
+}
+header nav a{
+  display: inline-block;
+  font-size: 23px;
+  color: #6e6e6e;
+  padding: 0 20px;
+  margin-left: 6px;
+  transition: 0.3s;
+  line-height: 36px;
+}
+header nav a:hover{
+  background-color: #373737;
+  text-decoration: none;
+  color: #ffffff;
+}
+.banner{
+  text-align: center;
+  padding-top: 220px;
 }
